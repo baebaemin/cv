@@ -10,6 +10,9 @@ const eslintConfig = defineConfig([
       // 문자열은 기본적으로 쌍따옴표, 필요하면 작은따옴표/백틱도 허용
       quotes: "off",
       "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true, allowTemplateLiterals: true }],
+      // 사용하지 않는 import/변수는 빌드 에러
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
     },
   },
   // Override default ignores of eslint-config-next.
