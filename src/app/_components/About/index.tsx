@@ -1,32 +1,31 @@
 import React from "react";
 import "./index.scss";
 
+const SKILLS = [
+  { category: "Languages", items: ["JavaScript", "TypeScript", "HTML", "CSS"] },
+  { category: "Frameworks", items: ["React", "Next.js", "Vue.js", "React Native"] },
+  { category: "Test / Library", items: ["React Query", "Zustand", "Storybook", "MSW", "Jotai"] },
+  { category: "Interaction / Design", items: ["P5.js", "Three.js", "Spline", "Figma", "Adobe Tools"] },
+] as const;
+
 export const About = () => {
   return (
     <section id="about" className="about">
       <div className="about__tech">
-        <h3 className="about__tech-title">(01) — Skills</h3>
+        <h3 className="about__tech-title">/Skills</h3>
         <div className="about__tech-grid">
-          <div>
-            <span className="about__tech-category">Frontend</span>
-            <span className="about__tech-items">React, Next.js</span>
-            <span className="about__tech-items">Vue, Svelte</span>
-          </div>
-          <div>
-            <span className="about__tech-category">Styling</span>
-            <span className="about__tech-items">Tailwind CSS</span>
-            <span className="about__tech-items">PostCSS, SCSS</span>
-          </div>
-          <div>
-            <span className="about__tech-category">Motion</span>
-            <span className="about__tech-items">Framer Motion</span>
-            <span className="about__tech-items">GSAP, Three.js</span>
-          </div>
-          <div>
-            <span className="about__tech-category">Backend</span>
-            <span className="about__tech-items">Node.js</span>
-            <span className="about__tech-items">Supabase, SQL</span>
-          </div>
+          {SKILLS.map(({ category, items }) => (
+            <div key={category} className="about__tech-cell">
+              <span className="about__tech-category">{category}</span>
+              <div className="about__tech-badges">
+                {items.map((item) => (
+                  <span key={item} className="about__tech-badge">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

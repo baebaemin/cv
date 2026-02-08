@@ -3,7 +3,7 @@ import "./index.scss";
 export const Contact = () => {
   return (
     <section id="contact" className="contact">
-      <span className="contact__label">(04) — Contact</span>
+      <span className="contact__label">/Contact</span>
       <div className="contact__grid">
         <div>
           <span className="contact__field-label">Email</span>
