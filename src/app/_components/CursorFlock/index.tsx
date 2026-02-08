@@ -2,14 +2,17 @@
 
 import { useEffect, useRef } from "react";
 import "./index.scss";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 import type p5 from "p5";
 type P5 = p5;
 type P5Vector = ReturnType<P5["createVector"]>;
 
+/** 커서 플로킹 캔버스 */
 export function CursorFlock() {
   const containerRef = useRef<HTMLDivElement>(null);
   const p5Instance = useRef<P5 | null>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -17,7 +20,7 @@ export function CursorFlock() {
     let mounted = true;
 
     const loadSketch = async () => {
-      // ref가 붙을 때까지 짧게 대기 (hydration 직후)
+      // hydration 직후 ref 붙을 때까지 대기
       await new Promise((r) => setTimeout(r, 0));
       if (!mounted || !containerRef.current) return;
 
@@ -25,7 +28,6 @@ export function CursorFlock() {
 
       const sketch = (p: P5) => {
         const flock: Boid[] = [];
-        const boidCount = 80;
         const mouseInfluence = 0.58; // 커서에 끌리는 정도
         const mouseRadius = 220; // 이 거리 안의 boid만 강하게 반응
 
@@ -34,6 +36,8 @@ export function CursorFlock() {
           if (!node) return;
           const canvas = p.createCanvas(p.windowWidth, p.windowHeight);
           canvas.parent(node);
+          // const isMobile = p.windowWidth < 768;
+          const boidCount = isMobile ? 28 : 80;
           for (let i = 0; i < boidCount; i++) {
             flock.push(
               new Boid(p.random(p.width), p.random(p.height), p)
