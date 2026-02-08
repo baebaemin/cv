@@ -1,5 +1,5 @@
 import "./index.scss";
-import { WORKS_DATA, PROJECTS_DATA } from "@/constants";
+import { PROJECTS_DATA,WORKS_DATA } from "@/constants";
 
 export const Works = () => {
   return (

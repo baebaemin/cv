@@ -1,6 +1,10 @@
-import type { Metadata } from "next";
-import { CursorFlock } from "./_components/CursorFlock";
 import "../styles/globals.scss";
+
+import { CursorFlock } from "./_components/CursorFlock";
+
+import type { Metadata } from "next";
+
+
 
 export const metadata: Metadata = {
   title: "Bae Minkyoung – Frontend Developer",

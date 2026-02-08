@@ -1,6 +1,6 @@
-import type { TimelineItem } from "@/types";
 import "./index.scss";
-import { EXPERIENCE_DATA, EDUCATION_DATA } from "@/constants";
+import { EDUCATION_DATA,EXPERIENCE_DATA } from "@/constants";
+import type { TimelineItem } from "@/types";
 
 export const CV = () => {
   const renderList = (items: readonly TimelineItem[]) =>

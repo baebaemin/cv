@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import "./index.scss";
+import { useEffect, useRef } from "react";
+
 import { useIsMobile } from "@/hooks/useIsMobile";
 
 import type p5 from "p5";

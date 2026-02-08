@@ -1,9 +1,10 @@
-import { Hero } from "./_components/Hero";
-import { About } from "./_components/About";
-import { CV } from "./_components/CV";
-import { Works } from "./_components/Works";
-import { Contact } from "./_components/Contact";
 import "./page.scss";
+
+import { About } from "./_components/About";
+import { Contact } from "./_components/Contact";
+import { CV } from "./_components/CV";
+import { Hero } from "./_components/Hero";
+import { Works } from "./_components/Works";
 
 function Home() {
   return (

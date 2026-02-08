@@ -1,4 +1,4 @@
-import type { WorkItem, ProjectItem, TimelineItem, SkillCategory } from "@/types";
+import type { ProjectItem, SkillCategory,TimelineItem, WorkItem } from "@/types";
 
 /** works 데이터 */
 export const WORKS_DATA: WorkItem[] = [
