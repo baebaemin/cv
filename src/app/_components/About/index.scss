@@ -1,5 +1,5 @@
 // Block: about
-@use '../../styles/variables' as *;
+@use "../../../styles/variables" as *;
 
 .about {
   padding-top: $spacing-12;
@@ -9,36 +9,6 @@
   @media (min-width: $breakpoint-md) {
     padding-top: $spacing-24;
     padding-bottom: $spacing-24;
-  }
-
-  &__label {
-    font-size: $font-size-xs;
-    font-family: $font-mono;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    display: block;
-    opacity: 0.5;
-    margin-bottom: $spacing-12;
-  }
-
-  &__intro {
-    font-size: $font-size-xl;
-    font-weight: 300;
-    line-height: 1.375;
-    color: $color-neutral-800;
-    max-width: 28rem;
-
-    @media (min-width: $breakpoint-md) {
-      font-size: $font-size-2xl;
-    }
-  }
-
-  &__spacer {
-    height: 12rem;
-
-    @media (min-width: $breakpoint-md) {
-      height: 16rem;
-    }
   }
 
   &__tech {

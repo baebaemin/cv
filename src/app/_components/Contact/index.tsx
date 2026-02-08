@@ -1,4 +1,4 @@
-import './Contact.scss';
+import "./index.scss";
 
 export const Contact = () => {
   return (
@@ -15,7 +15,6 @@ export const Contact = () => {
           <span className="contact__field-label">Social</span>
           <div className="contact__links">
             <a href="#">Instagram</a>
-            {/* <a href="#">LinkedIn</a> */}
             <a href="#">Github</a>
           </div>
         </div>

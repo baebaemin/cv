@@ -1,5 +1,5 @@
 // Block: hero
-@use '../../styles/variables' as *;
+@use "../../../styles/variables" as *;
 
 .hero {
   margin-bottom: $spacing-12;
@@ -9,18 +9,12 @@
   }
 
   &__title {
-    font-family: $font-title;
     font-size: $font-size-sm;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: $spacing-2;
   }
 
   &__subtitle {
     font-size: $font-size-sm;
     color: $color-neutral-500;
-    font-family: $font-mono;
     margin-bottom: $spacing-6;
   }
 

@@ -1,11 +1,11 @@
-import React from 'react';
-import './CV.scss';
+import React from "react";
+import "./index.scss";
 
 export const CV = () => {
   const history = [
-    { year: '2022 — Present', role: 'Senior Frontend Developer', company: 'Tech Solutions Inc.', location: 'Seoul' },
-    { year: '2020 — 2022', role: 'Frontend Developer', company: 'Creative Studio', location: 'Busan' },
-    { year: '2016 — 2020', role: 'BS Computer Science', company: 'Seoul National University', location: 'Seoul' },
+    { year: "2022 — Present", role: "Senior Frontend Developer", company: "Tech Solutions Inc.", location: "Seoul" },
+    { year: "2020 — 2022", role: "Frontend Developer", company: "Creative Studio", location: "Busan" },
+    { year: "2016 — 2020", role: "BS Computer Science", company: "Seoul National University", location: "Seoul" },
   ];
 
   return (
