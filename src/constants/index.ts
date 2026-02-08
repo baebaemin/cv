@@ -1,4 +1,28 @@
-import type { ProjectItem, SkillCategory,TimelineItem, WorkItem } from "@/types";
+import type { ProjectItem, SkillCategory, TimelineItem, WorkItem } from "@/types";
+
+/** skills 데이터 */
+export const SKILLS_DATA: readonly SkillCategory[] = [
+  { category: "Languages", items: ["JavaScript", "TypeScript", "HTML", "CSS"] },
+  { category: "Frameworks", items: ["React", "Next.js", "Vue.js", "React Native"] },
+  { category: "Library / Test", items: ["React Query", "Zustand", "Storybook", "MSW", "Jotai"] },
+  {
+    category: "Interaction / Design",
+    items: ["P5.js", "Three.js", "Spline", "Figma", "Adobe Tools"],
+  },
+];
+
+/** experience 데이터 */
+export const EXPERIENCE_DATA: readonly TimelineItem[] = [
+  { year: "2024.02 ~ 재직중", role: "Frontend Developer", company: "사람인 IT본부 FE개발팀" },
+  { year: "2020.03 ~ 2023.12", role: "Co-founder", company: "Studio When" },
+  { year: "2016.08 ~ 2018.12", role: "연구원", company: "안그라픽스 디지털디자인연구소" },
+];
+
+/** education 데이터 */
+export const EDUCATION_DATA: readonly TimelineItem[] = [
+  { year: "2023.01 ~ 2023.12", role: "SSAFY 9기", company: "삼성 청년 SW 아카데미" },
+  { year: "2020.02", role: "인터랙션 디자인과 졸업", company: "한국예술종합학교 미술원" },
+];
 
 /** works 데이터 */
 export const WORKS_DATA: WorkItem[] = [
@@ -63,27 +87,14 @@ export const PROJECTS_DATA: ProjectItem[] = [
   },
 ];
 
-/** experience 데이터 */
-export const EXPERIENCE_DATA: readonly TimelineItem[] = [
-  { year: "2024.02 ~ 재직중", role: "Frontend Developer", company: "사람인 IT본부 FE개발팀" },
-  { year: "2020.03 ~ 2022.12", role: "Co-founder", company: "Studio When" },
-  { year: "2016.08 ~ 2018.12", role: "연구원", company: "안그라픽스 디지털디자인연구소" },
-];
 
-/** education 데이터 */
-export const EDUCATION_DATA: readonly TimelineItem[] = [
-  { year: "2023.01 ~ 2023.12", role: "SSAFY 9기", company: "삼성 청년 SW 아카데미" },
-  { year: "2020.02", role: "인터랙션 디자인과 졸업", company: "한국예술종합학교 미술원" },
-];
-
-/** skills 데이터 */
-export const SKILLS_DATA: readonly SkillCategory[] = [
-  { category: "Languages", items: ["JavaScript", "TypeScript", "HTML", "CSS"] },
-  { category: "Frameworks", items: ["React", "Next.js", "Vue.js", "React Native"] },
-  { category: "Library / Test", items: ["React Query", "Zustand", "Storybook", "MSW", "Jotai"] },
+/** others 데이터 */
+export const OTHERS_DATA: readonly ProjectItem[] = [
   {
-    category: "Interaction / Design",
-    items: ["P5.js", "Three.js", "Spline", "Figma", "Adobe Tools"],
+    dateRange: "2020.03 — 2023.12",
+    title: "studio when",
+    detail: "2020.03 ~ 2023.12",
+    linkHref: "https://studio-when.com/",
+    description: "시간을 담는 방식을 새롭게 제안하는 timepiece projects",
   },
 ];
-  

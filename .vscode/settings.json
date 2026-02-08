@@ -1,6 +1,9 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
   // TODO: ts 파일 포맷팅 비활성화 필요 여부 확인 필요
   // "typescript.format.enable": false,
   "[typescript]": {

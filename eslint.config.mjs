@@ -48,6 +48,7 @@ const eslintConfig = defineConfig([
           "args": "after-used",
         },
       ],
+      "comma-spacing": ["error", { "before": false, "after": true }],
       "react/jsx-uses-react": "off",
       "react-hooks/exhaustive-deps": "error",
     },

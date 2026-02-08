@@ -1,5 +1,5 @@
 import "./index.scss";
-import { EDUCATION_DATA,EXPERIENCE_DATA } from "@/constants";
+import { EDUCATION_DATA, EXPERIENCE_DATA } from "@/constants";
 import type { TimelineItem } from "@/types";
 
 export const CV = () => {

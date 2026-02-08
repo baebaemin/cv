@@ -25,7 +25,7 @@ export interface ProjectItem {
   /** 설명 */
   description: string;
   /** 역할 */
-  role: string;
+  role?: string;
 }
 
 /** experience / education 공통 항목 (년도, 역할, 회사/기관) */
