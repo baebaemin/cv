@@ -3,7 +3,6 @@
 
 .cv {
   padding-top: 60px;
-  // border-top: 1px solid $color-border;
 
   &__block {
     & + & {
@@ -50,22 +49,6 @@
     color: $color-neutral-500;
   }
 
-  &__download {
-    margin-top: $spacing-8;
-
-    a {
-      font-size: $font-size-xs;
-      font-family: $font-mono;
-      text-transform: uppercase;
-      text-decoration: underline;
-      text-underline-offset: 4px;
-      text-decoration-thickness: 1px;
-
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-  }
   &__divider {
     border: none;
     border-top: 1px solid $color-border;

@@ -5,11 +5,6 @@
   padding-top: $spacing-12;
   padding-bottom: $spacing-12;
 
-  // @media (min-width: $breakpoint-md) {
-    // padding-top: $spacing-24;
-    // padding-bottom: $spacing-24;
-  // }
-
   &__tech-title {
     font-size: $font-size-xs;
     font-family: $font-mono;
@@ -45,7 +40,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: $spacing-1 $spacing-1;
-
   }
 
   &__tech-badge {

@@ -24,22 +24,4 @@
     font-weight: 500;
     margin-bottom: 0.25rem;
   }
-
-  &__subtitle {
-    // font-size: $font-size-sm;
-    margin-bottom: $spacing-6;
-    font-size: $font-size-xs;
-    color: $color-neutral-500;
-  }
-
-  &__meta {
-    font-size: $font-size-xs;
-    font-family: $font-mono;
-    color: $color-neutral-400;
-
-    &-line {
-      display: block;
-      padding-top: $spacing-1;
-    }
-  }
 }

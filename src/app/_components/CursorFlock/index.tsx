@@ -26,7 +26,7 @@ export function CursorFlock() {
       const sketch = (p: P5) => {
         const flock: Boid[] = [];
         const boidCount = 80;
-        const mouseInfluence = 0.18; // 커서에 끌리는 정도
+        const mouseInfluence = 0.58; // 커서에 끌리는 정도
         const mouseRadius = 220; // 이 거리 안의 boid만 강하게 반응
 
         p.setup = () => {
@@ -89,7 +89,6 @@ export function CursorFlock() {
   return <div ref={containerRef} className="cursor-flock" aria-hidden />;
 }
 
-// Boid: [p5.js Flocking 예제](https://p5js.org/examples/classes-and-objects-flocking/) 기반
 class Boid {
   position: P5Vector;
   velocity: P5Vector;
@@ -224,7 +223,6 @@ class Boid {
     p.translate(this.position.x, this.position.y);
     p.noStroke();
     p.fill(265, 265, 265);
-    // p.fill(26, 26, 26, 70);
     p.circle(0, 0, 4);
     p.pop();
   }

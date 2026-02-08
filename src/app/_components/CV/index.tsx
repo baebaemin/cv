@@ -35,9 +35,6 @@ export const CV = () => {
         <div className="cv__label">/ Education</div>
         <div className="cv__list">{renderList(education)}</div>
       </div>
-      {/* <div className="cv__download">
-        <a href="#">Download PDF</a>
-      </div> */}
     </section>
   );
 };
