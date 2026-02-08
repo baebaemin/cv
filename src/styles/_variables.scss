@@ -1,0 +1,33 @@
+// BEM SCSS – Design tokens (Figma/theme 기반)
+$color-bg: #fcfcfc;
+$color-text: #1a1a1a;
+$color-text-muted: #717182;
+$color-text-light: #a3a3a3;
+$color-border: rgba(0, 0, 0, 0.1);
+$color-neutral-400: #a3a3a3;
+$color-neutral-500: #737373;
+$color-neutral-800: #262626;
+
+$font-sans: system-ui, -apple-system, sans-serif;
+$font-mono: ui-monospace, monospace;
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 0.75rem;
+$spacing-4: 1rem;
+$spacing-6: 1.5rem;
+$spacing-8: 2rem;
+$spacing-12: 3rem;
+$spacing-24: 6rem;
+$spacing-32: 8rem;
+$spacing-48: 12rem;
+
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;

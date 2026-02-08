@@ -1,0 +1,36 @@
+// Block: hero
+@use '../../styles/variables' as *;
+
+.hero {
+  margin-bottom: $spacing-12;
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $spacing-24;
+  }
+
+  &__title {
+    font-size: $font-size-sm;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: $spacing-2;
+  }
+
+  &__subtitle {
+    font-size: $font-size-sm;
+    color: $color-neutral-500;
+    font-family: $font-mono;
+    margin-bottom: $spacing-6;
+  }
+
+  &__meta {
+    font-size: $font-size-xs;
+    font-family: $font-mono;
+    color: $color-neutral-400;
+
+    &-line {
+      display: block;
+      padding-top: $spacing-1;
+    }
+  }
+}

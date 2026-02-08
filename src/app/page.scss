@@ -1,0 +1,94 @@
+// Block: page (메인 레이아웃)
+@use '../styles/variables' as *;
+
+.page {
+  background: $color-bg;
+  color: $color-text;
+  min-height: 100vh;
+
+  @media (min-width: $breakpoint-md) {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    @media (min-width: $breakpoint-md) {
+      flex-direction: row;
+    }
+  }
+
+  &__left-col {
+    width: 100%;
+    border-bottom: 1px solid $color-border;
+    background: $color-bg;
+    z-index: 20;
+
+    @media (min-width: $breakpoint-md) {
+      width: 45%;
+      height: 100%;
+      overflow-y: auto;
+      border-bottom: none;
+      border-right: 1px solid $color-border;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      width: 40%;
+    }
+  }
+
+  &__left-inner {
+    padding: $spacing-6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+
+    @media (min-width: $breakpoint-md) {
+      padding: $spacing-12;
+    }
+  }
+
+  &__right-col {
+    width: 100%;
+    background: $color-bg;
+
+    @media (min-width: $breakpoint-md) {
+      width: 55%;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      width: 60%;
+    }
+  }
+
+  &__right-inner {
+    padding: $spacing-6 $spacing-12;
+
+    @media (min-width: $breakpoint-md) {
+      padding: $spacing-12;
+      padding-top: $spacing-32;
+    }
+  }
+
+  &__cv-wrap {
+    @media (min-width: $breakpoint-md) {
+      min-height: 80vh;
+    }
+    margin-bottom: $spacing-32;
+  }
+
+  &__footer {
+    margin-top: $spacing-48;
+    padding-top: $spacing-12;
+    border-top: 1px solid $color-border;
+    font-size: $font-size-xs;
+    color: $color-neutral-400;
+    text-align: center;
+  }
+}

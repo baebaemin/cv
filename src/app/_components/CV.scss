@@ -1,0 +1,67 @@
+// Block: cv
+@use '../../styles/variables' as *;
+
+.cv {
+  padding-top: $spacing-12;
+  border-top: 1px solid $color-border;
+
+  &__label {
+    font-size: $font-size-xs;
+    font-family: $font-mono;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    opacity: 0.5;
+    margin-bottom: $spacing-6;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-6;
+  }
+
+  &__item {
+    // group for hover if needed
+  }
+
+  &__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: $spacing-1;
+  }
+
+  &__item-role {
+    font-size: $font-size-sm;
+    font-weight: 500;
+  }
+
+  &__item-year {
+    font-size: $font-size-xs;
+    font-family: $font-mono;
+    color: $color-neutral-400;
+  }
+
+  &__item-company {
+    font-size: $font-size-xs;
+    color: $color-neutral-500;
+  }
+
+  &__download {
+    margin-top: $spacing-8;
+
+    a {
+      font-size: $font-size-xs;
+      font-family: $font-mono;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

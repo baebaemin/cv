@@ -1,0 +1,81 @@
+// Block: about
+@use '../../styles/variables' as *;
+
+.about {
+  padding-top: $spacing-12;
+  padding-bottom: $spacing-12;
+  border-top: 1px solid $color-border;
+
+  @media (min-width: $breakpoint-md) {
+    padding-top: $spacing-24;
+    padding-bottom: $spacing-24;
+  }
+
+  &__label {
+    font-size: $font-size-xs;
+    font-family: $font-mono;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    opacity: 0.5;
+    margin-bottom: $spacing-12;
+  }
+
+  &__intro {
+    font-size: $font-size-xl;
+    font-weight: 300;
+    line-height: 1.375;
+    color: $color-neutral-800;
+    max-width: 28rem;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: $font-size-2xl;
+    }
+  }
+
+  &__spacer {
+    height: 12rem;
+
+    @media (min-width: $breakpoint-md) {
+      height: 16rem;
+    }
+  }
+
+  &__tech {
+    padding-top: $spacing-8;
+    border-top: 1px solid $color-border;
+  }
+
+  &__tech-title {
+    font-size: $font-size-xs;
+    font-family: $font-mono;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: $spacing-6;
+  }
+
+  &__tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-8 0;
+    font-size: $font-size-xs;
+    font-family: $font-mono;
+    color: $color-neutral-500;
+  }
+
+  &__tech-category {
+    display: block;
+    color: $color-neutral-400;
+    margin-bottom: $spacing-2;
+  }
+
+  &__tech-items {
+    display: block;
+    color: $color-text;
+    font-size: $font-size-sm;
+
+    & + & {
+      margin-top: $spacing-1;
+    }
+  }
+}
