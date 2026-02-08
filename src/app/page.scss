@@ -28,6 +28,12 @@
     border-bottom: 1px solid $color-border;
     background: transparent;
     z-index: 20;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     @media (min-width: $breakpoint-md) {
       width: 45%;
@@ -43,6 +49,7 @@
   }
 
   &__left-inner {
+    border: 1px solid red;
     padding: $spacing-6;
     display: flex;
     flex-direction: column;
@@ -51,12 +58,19 @@
 
     @media (min-width: $breakpoint-md) {
       padding: $spacing-12;
+      padding-top: 1.1rem;
     }
   }
 
   &__right-col {
     width: 100%;
     background: transparent;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     @media (min-width: $breakpoint-md) {
       width: 55%;
