@@ -1,119 +1,120 @@
-// Block: works
+// Block: works (Selected Works)
 @use "../../../styles/variables" as *;
 
 .works {
   padding-top: $spacing-12;
   border-top: 1px solid $color-border;
+}
 
-  &__header {
-    margin-bottom: $spacing-24;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+.works__content {
+  // padding-bottom: $spacing-12;
+}
 
-  &__label {
-    font-size: $font-size-xs;
-    font-family: $font-mono;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    display: block;
-    opacity: 0.5;
-  }
-
-  &__hint {
-    font-size: $font-size-xs;
-    font-family: $font-mono;
-    color: $color-neutral-400;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-32;
-
-    @media (min-width: $breakpoint-md) {
-      gap: $spacing-48;
-    }
-  }
-
-  &__item {
-    width: 100%;
-    cursor: pointer;
-  }
-
-  &__image-wrap {
-    width: 100%;
-    background: #f5f5f5;
-    overflow: hidden;
-    margin-bottom: $spacing-4;
-    position: relative;
-    aspect-ratio: 4 / 3;
-
-    @media (min-width: $breakpoint-md) {
-      aspect-ratio: 16 / 9;
-    }
-  }
-
-  &__item:hover &__image {
-    filter: grayscale(0);
-    transform: scale(1.02);
-  }
-
-  &__item:hover &__image-overlay {
-    background: rgba(0, 0, 0, 0.05);
-  }
-
-  &__image-overlay {
-    position: absolute;
-    inset: 0;
-    background: transparent;
-    transition: background-color 0.5s;
-    z-index: 10;
-  }
-
-  &__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(100%);
-    transition: filter 1s, transform 1s;
-  }
-
-  &__meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.works__block {
+  & + & {
+    margin-top: $spacing-12;
     border-top: 1px solid $color-border;
-    padding-top: $spacing-3;
-  }
-
-  &__title {
-    font-size: $font-size-lg;
-    font-weight: 400;
-
+    padding-top: $spacing-12;
     @media (min-width: $breakpoint-md) {
-      font-size: $font-size-xl;
-    }
-
-    .works__item:hover & {
-      padding-left: $spacing-4;
-      transition: padding-left 0.5s;
+      margin-top: $spacing-12;
     }
   }
+}
 
-  &__details {
-    text-align: right;
-    font-size: $font-size-xs;
-    font-family: $font-mono;
-    color: $color-neutral-500;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: $spacing-1;
+.works__label {
+  font-size: $font-size-xs;
+  font-family: $font-mono;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+  margin-bottom: $spacing-6;
+}
 
-    .works__detail-category {
-      color: $color-text;
+.works__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-6;
+
+  @media (min-width: $breakpoint-md) {
+    gap: $spacing-6;
+  }
+
+  &--projects {
+    // @media (min-width: $breakpoint-md) {
+      gap: $spacing-12;
+    // }
+    // border: 1px solid red;
+  }
+  
+}
+
+.works__item {
+  // padding-bottom: $spacing-6;
+  // border-bottom: 1px solid $color-border;
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.works__item-title {
+  font-size: $font-size-sm;
+  font-weight: 500;
+  margin-bottom: $spacing-2;
+
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-sm;
+    margin-bottom: $spacing-2;
+  }
+}
+
+.works__item-title-link {
+  color: $color-text;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.85;
+
+    .works__item-title-text {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
     }
   }
+}
+
+.works__item-title-text {
+  text-decoration: none;
+}
+
+.works__item-title-icon {
+  margin-left: 0.2em;
+  top: 1px;
+  position: relative;
+}
+
+.works__item-date,
+.works__item-meta {
+  font-size: $font-size-xs;
+  font-family: $font-mono;
+  color: $color-neutral-500;
+  margin-bottom: $spacing-2;
+}
+
+.works__item-desc {
+  font-size: $font-size-sm;
+  color: $color-neutral-500;
+  line-height: 1.6;
+  margin-bottom: $spacing-2;
+}
+
+.works__item-role {
+  font-size: $font-size-xs;
+  font-family: $font-mono;
+  color: $color-neutral-400;
 }

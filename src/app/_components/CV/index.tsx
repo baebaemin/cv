@@ -4,7 +4,7 @@ import "./index.scss";
 export const CV = () => {
   const experience = [
     { year: "2024.02 ~ 재직중", role: "Frontend Developer", company: "사람인 IT본부 FE개발팀" },
-    { year: "2020.03 ~ 2022.12", role: "Art Director", company: "Studio When" },
+    { year: "2020.03 ~ 2022.12", role: "Co-founder", company: "Studio When" },
     { year: "2016.08 ~ 2018.12", role: "연구원", company: "안그라픽스 디지털디자인연구소" },
   ];
 
