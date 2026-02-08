@@ -2,6 +2,8 @@
 @use '../styles/variables' as *;
 
 .page {
+  position: relative;
+  z-index: 1;
   background: $gradient-bg;
   color: $color-text;
   min-height: 100vh;
