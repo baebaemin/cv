@@ -4,7 +4,7 @@ import "./index.scss";
 const SKILLS = [
   { category: "Languages", items: ["JavaScript", "TypeScript", "HTML", "CSS"] },
   { category: "Frameworks", items: ["React", "Next.js", "Vue.js", "React Native"] },
-  { category: "Test / Library", items: ["React Query", "Zustand", "Storybook", "MSW", "Jotai"] },
+  { category: "Library / Test", items: ["React Query", "Zustand", "Storybook", "MSW", "Jotai"] },
   { category: "Interaction / Design", items: ["P5.js", "Three.js", "Spline", "Figma", "Adobe Tools"] },
 ] as const;
 

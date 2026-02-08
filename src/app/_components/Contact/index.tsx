@@ -14,8 +14,8 @@ export const Contact = () => {
         <div>
           <span className="contact__field-label">Social</span>
           <div className="contact__links">
-            <a href="https://www.instagram.com/hellowbaemin/">Instagram</a>
             <a href="https://github.com/baebaemin">Github</a>
+            <a href="https://www.instagram.com/hellowbaemin/">Instagram</a>
           </div>
         </div>
       </div>

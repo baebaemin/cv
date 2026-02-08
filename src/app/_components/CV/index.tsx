@@ -27,12 +27,12 @@ export const CV = () => {
   return (
     <section id="cv" className="cv">
       <div className="cv__block">
-        <div className="cv__label">/ Experience</div>
+        <div className="cv__label">/Experiences</div>
         <div className="cv__list">{renderList(experience)}</div>
       </div>
       <hr className="cv__divider" />
       <div className="cv__block">
-        <div className="cv__label">/ Education</div>
+        <div className="cv__label">/Education</div>
         <div className="cv__list">{renderList(education)}</div>
       </div>
     </section>

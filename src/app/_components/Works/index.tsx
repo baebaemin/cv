@@ -62,7 +62,7 @@ export const Works = () => {
     <section id="works" className="works">
       <div className="works__content">
         <div className="works__block">
-          <div className="works__label">/ Works</div>
+          <div className="works__label">/Works</div>
           <ul className="works__list">
             {WORKS_DATA.map((item) => (
               <li key={item.dateRange} className="works__item">
@@ -84,7 +84,7 @@ export const Works = () => {
           </ul>
         </div>
         <div className="works__block">
-          <div className="works__label">/ Projects</div>
+          <div className="works__label">/Projects</div>
           <ul className="works__list works__list--projects">
             {PROJECTS_DATA.map((item) => (
               <li key={item.dateRange} className="works__item">
