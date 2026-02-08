@@ -5,6 +5,12 @@
   padding-top: 60px;
   // border-top: 1px solid $color-border;
 
+  &__block {
+    & + & {
+      margin-top: $spacing-12;
+    }
+  }
+
   &__label {
     font-size: $font-size-xs;
     font-family: $font-mono;
@@ -18,7 +24,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: $spacing-6;
+    gap: $spacing-4;
   }
 
   &__item-header {
@@ -59,5 +65,10 @@
         opacity: 0.5;
       }
     }
+  }
+  &__divider {
+    border: none;
+    border-top: 1px solid $color-border;
+    margin: $spacing-12 0;
   }
 }

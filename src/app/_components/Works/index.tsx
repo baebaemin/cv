@@ -12,7 +12,7 @@ export const Works = () => {
   return (
     <section id="works" className="works">
       <div className="works__header">
-        <span className="works__label">(03) — Selected Works</span>
+        <span className="works__label">/ Selected Works</span>
         <span className="works__hint">SCROLL TO EXPLORE ↓</span>
       </div>
       <div className="works__list">
