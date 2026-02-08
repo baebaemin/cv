@@ -11,12 +11,14 @@ function Home() {
     <div className="page">
       <div className="page__inner">
         <aside className="page__left-col">
-          <div className="page__left-inner">
+          <div className="page__left-col-scroll">
+            <div className="page__left-inner">
             <div>
               <Hero />
               <About />
             </div>
             <Contact />
+            </div>
           </div>
         </aside>
 

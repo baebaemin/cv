@@ -1,5 +1,5 @@
 // Block: page (메인 레이아웃)
-@use '../styles/variables' as *;
+@use "../styles/variables" as *;
 
 .page {
   position: relative;
@@ -28,6 +28,42 @@
     border-bottom: 1px solid $color-border;
     background: transparent;
     z-index: 20;
+
+    @media (min-width: $breakpoint-md) {
+      position: relative;
+      width: 45%;
+      height: 100%;
+      overflow: hidden;
+      border-bottom: none;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at bottom, 
+          rgba(183, 185, 16, 0.3) -10%, 
+          rgba(255, 255, 255, 0.04) 40%,
+          transparent 100%
+        );
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.25s ease;
+      }
+
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      width: 40%;
+    }
+  }
+
+  &__left-col-scroll {
+    width: 100%;
+    height: 100%;
     scrollbar-width: none;
     -ms-overflow-style: none;
 
@@ -36,20 +72,11 @@
     }
 
     @media (min-width: $breakpoint-md) {
-      width: 45%;
-      height: 100%;
       overflow-y: auto;
-      border-bottom: none;
-      border-right: 1px solid $color-border;
-    }
-
-    @media (min-width: $breakpoint-lg) {
-      width: 40%;
     }
   }
 
   &__left-inner {
-    border: 1px solid red;
     padding: $spacing-6;
     display: flex;
     flex-direction: column;
@@ -102,7 +129,6 @@
   &__footer {
     margin-top: $spacing-48;
     padding-top: $spacing-12;
-    border-top: 1px solid $color-border;
     font-size: $font-size-xs;
     color: $color-neutral-400;
     text-align: center;

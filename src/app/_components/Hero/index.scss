@@ -10,12 +10,15 @@
 
   &__title {
     font-size: $font-size-sm;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
   }
 
   &__subtitle {
-    font-size: $font-size-sm;
-    color: $color-neutral-500;
+    // font-size: $font-size-sm;
     margin-bottom: $spacing-6;
+    font-size: $font-size-xs;
+    color: $color-neutral-500;
   }
 
   &__meta {
