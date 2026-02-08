@@ -10,7 +10,7 @@ export const CV = () => {
 
   return (
     <section id="cv" className="cv">
-      <div className="cv__label">(02) — Resume</div>
+      <div className="cv__label">/ Resume</div>
       <div className="cv__list">
         {history.map((item, i) => (
           <div key={i} className="cv__item">

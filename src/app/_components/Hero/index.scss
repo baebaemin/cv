@@ -2,10 +2,21 @@
 @use "../../../styles/variables" as *;
 
 .hero {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   margin-bottom: $spacing-12;
-
+  padding-bottom: $spacing-4;
+  padding-top: $spacing-4;
+  margin-left: 24px;
+  
   @media (min-width: $breakpoint-md) {
-    margin-bottom: $spacing-24;
+    margin-bottom: 0;
+    min-height: $hero-block-height-desktop;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: $spacing-12;
   }
 
   &__title {

@@ -85,7 +85,8 @@
 
     @media (min-width: $breakpoint-md) {
       padding: $spacing-12;
-      padding-top: 1.1rem;
+      padding-top: $spacing-12;
+      justify-content: flex-start;
     }
   }
 
@@ -115,7 +116,7 @@
 
     @media (min-width: $breakpoint-md) {
       padding: $spacing-12;
-      padding-top: $spacing-32;
+      padding-top: $spacing-12 + $hero-block-height-desktop;
     }
   }
 
