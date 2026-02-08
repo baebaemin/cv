@@ -1,5 +1,6 @@
 // BEM SCSS – Design tokens (Figma/theme 기반)
 $color-bg: #fcfcfc;
+$gradient-bg: radial-gradient(circle at center, #e5e6cf 0%, #ffffff 100%);
 $color-text: #1a1a1a;
 $color-text-muted: #717182;
 $color-text-light: #a3a3a3;
@@ -9,6 +10,7 @@ $color-neutral-500: #737373;
 $color-neutral-800: #262626;
 
 $font-sans: system-ui, -apple-system, sans-serif;
+$font-title: "Pretendard", $font-sans;
 $font-mono: ui-monospace, monospace;
 
 $font-size-xs: 0.75rem;

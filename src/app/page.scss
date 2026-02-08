@@ -2,7 +2,7 @@
 @use '../styles/variables' as *;
 
 .page {
-  background: $color-bg;
+  background: $gradient-bg;
   color: $color-text;
   min-height: 100vh;
 
@@ -24,7 +24,7 @@
   &__left-col {
     width: 100%;
     border-bottom: 1px solid $color-border;
-    background: $color-bg;
+    background: transparent;
     z-index: 20;
 
     @media (min-width: $breakpoint-md) {
@@ -54,7 +54,7 @@
 
   &__right-col {
     width: 100%;
-    background: $color-bg;
+    background: transparent;
 
     @media (min-width: $breakpoint-md) {
       width: 55%;
