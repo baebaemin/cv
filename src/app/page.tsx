@@ -1,4 +1,3 @@
-import React from 'react';
 import { Hero } from './_components/Hero';
 import { About } from './_components/About';
 import { CV } from './_components/CV';

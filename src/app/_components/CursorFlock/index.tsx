@@ -88,7 +88,7 @@ export function CursorFlock() {
         p5Instance.current = null;
       }
     };
-  }, []);
+  }, [isMobile]);
 
   return <div ref={containerRef} className="cursor-flock" aria-hidden />;
 }
